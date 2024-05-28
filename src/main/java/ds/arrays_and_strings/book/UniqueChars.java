@@ -4,15 +4,16 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
-5 Solutions with different Big O values
-1.1 Is Unique: Implement an algorithm to determine if a string has all unique characters.
-What if you cannot use additional data structures?
-Hints: #44, #117, #132
-
-#44. 1.1 Try a hash table.
-#117. 1.1 Could a bit vector be useful?
-#132. 1.1 Can you solve it in O(N log N) time? What might a solution like that look like?
+/**
+ * 1.1 Is Unique: Implement an algorithm to determine if a string has all unique characters.
+ * What if you cannot use additional data structures?
+ * Hints: #44, #117, #132
+ *
+ * #44. 1.1 Try a hash table.
+ * #117. 1.1 Could a bit vector be useful?
+ * #132. 1.1 Can you solve it in O(N log N) time? What might a solution like that look like?
+ *
+ * 5 Solutions with different Big O values
  */
 public class UniqueChars {
 
