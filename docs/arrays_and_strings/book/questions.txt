@@ -1,0 +1,183 @@
+1.1 Is Unique: Implement an algorithm to determine if a string has all unique characters.
+What if you cannot use additional data structures?
+Hints: #44, #117, #132
+
+#44. 1.1 Try a hash table.
+#117. 1.1 Could a bit vector be useful?
+#132. 1.1 Can you solve it in O(N log N) time? What might a solution like that look like?
+==================================================================================================
+1.2 Check Permutation: Given two strings, write a method to decide if one is a permutation of the
+other.
+Hints: #1, #84, #122, #131
+
+#1. 1.2 Describe what it means for two strings to be permutations of each other. Now, look at
+        that definition you provided. Can you check the strings against that definition?
+#84. 1.2 There is one solution that is 0 (N log N) time. Another solution uses some space, but
+         isO(N) time.
+#122. 1.2 Could a hash table be useful?
+#131. 1.2 Two strings that are permutations should have the same characters, but in different
+orders. Can you make the orders the same?
+===================================================================================================
+1.3 URLify: Write a method to replace all spaces in a string with '%20: You may assume that the
+string has sufficient space at the end to hold the additional characters, and that you are given
+the "true" length of the string. (Note: If implementing in Java, please use a character array so
+that you can perform this operation in place.)
+EXAMPLE
+Input: "Mr John Smith "J 13
+Output: "Mr%20J ohn%20Smith"
+Hints: #53, #118
+
+#53.  1.3  It's often easiest to modify strings by going from the end of the string to the beginning.
+#118  1.3  You might find you need to know the number of spaces. Can you just count them?
+====================================================================================================
+
+1.4 Palindrome Permutation: Given a string, write a function to check if it is a permutation of a palindrome. A palindrome is a word or phrase that is the same forwards and backwards. A permutation
+is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.
+EXAMPLE
+Input: Tact Coa
+Output: True (permutations: "taco cat". "atco cta". etc.)
+Hints: #106, #121, #134, #136
+1.5 One Away: There are three types of edits that can be performed on strings: insert a character,
+remove a character, or replace a character. Given two strings, write a function to check if they are
+one edit (or zero edits) away.
+EXAMPLE
+pale, pIe -> true
+pales. pale -> true
+pale. bale -> true
+pale. bake -> false
+Hints: #23, #97, #130
+
+1.6 String Compression: Implement a method to perform basic string compression using the counts
+of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. If the
+"compressed" string would not become smaller than the original string, your method should return
+the original string. You can assume the string has only uppercase and lowercase letters (a - z).
+Hints: #92, # 11 0 
+
+
+1.7 Rotate Matrix: Given an image represented by an NxN matrix, where each pixel in the image is 4
+bytes, write a method to rotate the image by 90 degrees. (an you do this in place?
+Hints: #51, #100
+
+1.8 Zero Matrix: Write an algorithm such that if an element in an MxN matrix is 0, its entire row and
+column are set to O.
+Hints: # 17, #74, #102
+
+1.9 String Rotation: Assume you have a method isSubst ring which checks if one word is a substring
+of another. Given two strings, 51 and 52, write code to check if 52 is a rotation of 51 using only one
+call to isSubstring (e.g., "waterbottle" is a rotation of"erbottlewat").
+Hints: #34, #88, #104 
+
+
+Additional Questions: Object-Oriented Design (#7.12), Recursion (#8.3), Sorting and Searching (#10.9), (++
+(#12.11), Moderate Problems (#16.8, #16.17, #16.22), Hard Problems (#17.4, #17.7, #17.13, #17.22, #17.26).
+
+
+7.12 Hash Table: Design and implement a hash table which uses chaining (linked lists) to handle collisions.
+Hints: #287, #307
+
+8.3 Magic Index: A magic index in an array A [e ... n -1] is defined to be an index such that A[ i] =
+i. Given a sorted array of distinct integers, write a method to find a magic index, if one exists, in
+array A.
+FOLLOW UP
+What if the values are not distinct?
+Hints: # 170, #204, #240, #286, #340
+
+10.9 Sorted Matrix Search: Given an M x N matrix in which each row and each column is sorted in
+ascending order, write a method to find an element.
+Hints: #193, #211, #229, #251, #266, #279, #288, #291, #303, #317, #330
+
+12.11 2D Alloc: Write a function in ( called my2DAlloe which allocates a two-dimensional array. Minimize the number of calls to maUoe and make sure that the memory is accessible by the notation
+arr[i] [j].
+Hints: #406, #418, #426
+
+Moderate Problems
+Moderate Problems (#16.8, #16.17, #16.22),
+16.8 English Int: Given any integer, print an English phrase that describes the integer (e.g., "One Thousand, Two Hundred Thirty Four").
+Hints: #502, #588, #688
+
+16.17 Contiguous Sequence: You are given an array of integers (both positive and negative). Find the
+contiguous sequence with the largest sum. Return the sum.
+EXAMPLE
+Input 2, -8, 3, -2, 4, -10
+Output S (Le., {3, -2, 4})
+Hints: #531, #551, #567, #594, #614
+
+16.22 Langton's Ant: An ant is sitting on an infinite grid of white and black squares. It initially faces right.
+At each step, it does the following:
+(1) At a white square, flip the color of the square, turn 90 degrees right (clockwise), and move forward
+one unit.
+(2) At a black square, flip the color of the square, turn 90 degrees left (counter-clockwise). and move
+forward one unit.
+Write a program to simulate the first K moves that the ant makes and print the final board as a grid.
+Note that you are not provided with the data structure to represent the grid. This is something you
+must design yourself. The only input to your method is K. You should print the final grid and return
+nothing. The method signature might be something like void printKMoves (int K).
+Hints: #474, #487, #533, #540, #559, #570, #599, #676, #627
+
+Hard Problems (#17.4, #17.7, #17.13, #17.22, #17.26).
+
+17.4 Missing Number: An array A contains all the integers from 0 to n, except for one number which
+is missing. In this problem, we cannot access an entire integer in A with a single operation. The
+elements of A are represented in binary, and the only operation we can use to access them is "fetch
+the jth bit of A [ i] ," which takes constant time. Write code to find the missing integer. Can you do
+itinO(n) time?
+Hints: #610, #659, #683
+
+17.7 Baby Names: Each year, the government releases a list of the 10000 most common baby names
+and their frequencies (the number of babies with that name). The only problem with this is that
+some names have multiple spellings. For example, "John" and "Jon" are essentially the same name
+but would be listed separately in the list. Given two lists, one of names/frequencies and the other
+of pairs of equivalent names, write an algorithm to print a new list of the true frequency of each
+name. Note that if John and Jon are synonyms, and Jon and Johnny are synonyms, then John and
+Johnny are synonyms. (It is both transitive and symmetric.) In the final list, any name can be used
+as the "real" name.
+EXAMPLE
+Input:
+Names: John (15), Jon (12), Chris (13), Kris (4), Christopher (19)
+Synonyms: (Jon, John), (John, Johnny), (Chris, Kris), (Chris, Christopher)
+Output: John (27), Kris (36)
+Hints:#478 #493,#512,#53~#586,#605,#655 #675,#704
+
+
+17.13 Re-Space: Oh, no! You have accidentally removed all spaces, punctuation, and capitalization in a
+lengthy document. A sentence Iike"I reset the computer. It still didn't boot!"
+became"iresetthecomputeri tstilldidntboot': You'll deal with the punctuation and capitalization later; right now you need to re-insert the spaces. Most of the words are in a dictionary but
+a few are not. Given a dictionary (a list of strings) and the document (a string)' design an algorithm
+to unconcatenate the document in a way that minimizes the number of unrecognized characters.
+EXAMPLE:
+Input jesslookedjustliketimherbrother
+Output: jess looked just like tim her brother (7 unrecognized characters)
+Hints: #496, #623, #656, #677, #739, #749
+
+17.22 Word Transformer: Given two words of equal length that are in a dictionary, write a method to
+transform one word into another word by changing only one letter at a time. The new word you get
+in each step must be in the dictionary.
+EXAMPLE
+Input: DAMP, LIKE
+Output: DAMP -> LAMP -> LIMP -> LIME -> LIKE
+Hints: #506, #535, #556, #580, #598, #618, #738
+
+
+17.26 Sparse Similarity: The similarity of two documents (each with distinct words) is defined to be the
+size of the intersection divided by the size of the union. For example, if the documents consist of
+integers, the similarity of {1, 5, 3} and {1, 7, 2, 3} is e. 4, because the intersection has size
+2 and the union has size 5.
+We have a long list of documents (with distinct values and each with an associated ID) where the
+similarity is believed to be "sparse:'That is, any two arbitrarily selected documents are very likely to
+have similarity O. Design an algorithm that returns a list of pairs of document IDs and the associated
+similarity.
+Print only the pairs with similarity greater than O. Empty documents should not be printed at all. For
+simplicity, you may assume each document is represented as an array of distinct integers.
+EXAMPLE
+Input:
+13: {14, 15, lea, 9, 3}
+16: {32, 1, 9, 3, 5}
+19: {15, 29, 2, 6, 8, 7}
+24: {7, la}
+Output:
+ID1, ID2 SIMILARITY
+13, 19 a.1
+13, 16 a.25
+19, 24 a.14285714285714285
+Hints: #484, #498, #570, #578, #534, #547, #555, #567, #569, #517, #584, #603, #67 7, #636
+
