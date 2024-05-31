@@ -123,7 +123,7 @@ public class UniqueChars {
     /**
      * 1.1 Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
      * cannot use additional data structures?
-     * 
+     *
      * SOLUTION
      * You should first ask your interviewer if the string is an ASCII string or a Unicode string. Asking this question
      * will show an eye for detail and a solid foundation in computer science. We'll assume for simplic
