@@ -54,26 +54,31 @@ pale. bale -> true
 pale. bake -> false
 Hints: #23, #97, #130
 
+#23.  1.5 Start with the easy thing. Can you check each of the conditions separately?
+#97.  1.5 What is the relationship between the "insert character" option and the "remove character"
+      option? Do these need to be two separate checks?
+#130. 1.5 Can you do all three checks in a single pass?
+====================================================================================================
 1.6 String Compression: Implement a method to perform basic string compression using the counts
 of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. If the
 "compressed" string would not become smaller than the original string, your method should return
 the original string. You can assume the string has only uppercase and lowercase letters (a - z).
 Hints: #92, # 11 0 
-
+====================================================================================================
 
 1.7 Rotate Matrix: Given an image represented by an NxN matrix, where each pixel in the image is 4
 bytes, write a method to rotate the image by 90 degrees. (an you do this in place?
 Hints: #51, #100
-
+====================================================================================================
 1.8 Zero Matrix: Write an algorithm such that if an element in an MxN matrix is 0, its entire row and
 column are set to O.
 Hints: # 17, #74, #102
-
+====================================================================================================
 1.9 String Rotation: Assume you have a method isSubst ring which checks if one word is a substring
 of another. Given two strings, 51 and 52, write code to check if 52 is a rotation of 51 using only one
 call to isSubstring (e.g., "waterbottle" is a rotation of"erbottlewat").
 Hints: #34, #88, #104 
-
+====================================================================================================
 
 Additional Questions: Object-Oriented Design (#7.12), Recursion (#8.3), Sorting and Searching (#10.9), (++
 (#12.11), Moderate Problems (#16.8, #16.17, #16.22), Hard Problems (#17.4, #17.7, #17.13, #17.22, #17.26).
