@@ -13,7 +13,7 @@ package ds.arrays_and_strings.book;
  * #53.  1.3  It's often easiest to modify strings by going from the end of the string to the beginning.
  * #118  1.3  You might find you need to know the number of spaces. Can you just count them?
  *
- * 5 Solutions with different Big O values
+ * 2 Solutions with different Big O values
  */
 public class URLify {
 
