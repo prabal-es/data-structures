@@ -196,6 +196,6 @@ public class SringCompression {
      * 34 }
      * One other benefit of this approach is that we can initialize StringBuilder to its necessary capacity
      * up-front. Without this, StringBuilder will (behind the scenes) need to double its capacity every time it
-     * hits capacity. The capacity could be double what we ultimately need. 
+     * hits capacity. The capacity could be double what we ultimately need.
      * */
 }
