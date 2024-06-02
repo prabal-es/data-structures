@@ -13,7 +13,6 @@ import java.util.Map;
  * #117. 1.1 Could a bit vector be useful?
  * #132. 1.1 Can you solve it in O(N log N) time? What might a solution like that look like?
  *
- * 5 Solutions with different Big O values
  */
 public class UniqueChars {
 
