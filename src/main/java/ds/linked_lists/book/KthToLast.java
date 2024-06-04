@@ -55,8 +55,8 @@ public class KthToLast {
         //System.out.println(kthToLast.getKthElementWithTotalLength(linkedList, 7, 0).data);// Last node
         //System.out.println(kthToLast.getKthElementWithTotalLength(linkedList, 7, 1).data);// Second Last node
 
-        System.out.println(kthToLast.getKthElementWithoutTotalLength(linkedList, 0).data);// Last node
-        System.out.println(kthToLast.getKthElementWithoutTotalLength(linkedList, 1).data);// Second Last node
+//        System.out.println(kthToLast.getKthElementWithoutTotalLength(linkedList, 0).data);// Last node
+//        System.out.println(kthToLast.getKthElementWithoutTotalLength(linkedList, 1).data);// Second Last node
     }
 
     /*

@@ -31,6 +31,9 @@ EXAMPLE
 Input: the node c from the linked list a - >b- >c - >d - >e- >f
 Result: nothing is returned, but the new linked list looks like a - >b- >d - >e- >f
 Hints: #72
+
+#73  2.3 Picture the list 1- > 5 - >9 - > 12. Removing 9 would make it look like 1- > 5 - > 12. You only
+         have access to the 9 node. Can you make it look like the correct answer?
 =========================================================================================================
 2.4 Partition: Write code to partition a linked list around a value x, such that all nodes less than x come
 before all nodes greater than or equal to x. lf x is contained within the list, the values of x only need
