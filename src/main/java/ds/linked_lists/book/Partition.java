@@ -159,6 +159,6 @@ public class Partition {
      * 21 return head;
      * 22 }
      * There are many equally optimal solutions to this problem. If you came up with a different one, that's okay!
-     * 
+     *
      */
 }
