@@ -268,6 +268,6 @@ public class Palindrome {
      * 2
      * 3 }
      * It's ugly, but it works.
-     * 
+     *
      * */
 }
