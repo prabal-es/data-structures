@@ -167,6 +167,6 @@ public class Intersection {
      * 57 return current;
      * 58 }
      * This algorithm takes O(A + B) time, where A and B are the lengths of the two linked lists. It takes O( 1)
-     * additional space. 
+     * additional space.
      * */
 }
