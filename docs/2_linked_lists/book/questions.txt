@@ -43,6 +43,12 @@ EXAMPLE
 Input: 3 -> 5 -> 8 -> 5 - > 10 -> 2 -> 1 [partition = 5)
 Output: 3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
 Hints: #3, #24
+
+#3   2.4 There are many solutions to this problem, most of which are equally optimal in runtime.
+         Some have shorter, cleaner code than others. Can you brainstorm different solutions?
+#24  2.4 Consider that the elements don't have to stay in the same relative order. We only need
+         to ensure that elements less than the pivot must be before elements greater than the
+         pivot. Does that help you come up with more solutions?
 =========================================================================================================
 2.5 Sum Lists: You have two numbers represented by a linked list, where each node contains a single
 digit. The digits are stored in reverse order, such that the 1 's digit is at the head of the list. Write a
