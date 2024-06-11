@@ -177,6 +177,6 @@ public class LoopDelection {
      * 27 / * Both now point to the start of the loop.
      * 28 return fast;
      * 29 }
-     * 
+     *
      * */
 }
