@@ -32,16 +32,37 @@ SetOfStacks. push () and SetOfStacks. pop () should behave identically to a sing
 (that is, pop ( ) should return the same values as it would if there were just a single stack).
 FOLLOW UP
 Implement a function popAt (int index) which performs a pop operation on a specific sub-stack.
-Hints: #64, #87
+Hints: #64, #81
+
+#64 3.3 You will need to keep track of the size of each substack. When one stack is full, you may
+        need to create a new stack.
+#81 3.3 Popping an element at a specific substack will mean that some stacks aren't at full
+        capacity. Is this an issue? There's no right answer, but you should think about how to
+        handle this.
 =========================================================================================================
 3.4 Queue via Stacks: Implement a MyQueue class which implements a queue using two stacks.
-Hints: #98, #7 74
-P9 2l6
+Hints: #98, #114
+
+#98  3.4 The major difference between a queue and a stack is the order of elements. A queue
+         removes the oldest item and a stack removes the newest item. How could you remove
+         the oldest item from a stack if you only had access to the newest item?
+#114 3.4 We can remove the oldest item from a stack by repeatedly removing the newest item
+         (inserting those into the temporary stack) until we get down to one element. Then, after
+         we've retrieved the newest item, putting all the elements back. The issue with this is
+         that doing several pops in a row will require 0 (N) work each time. Can we optimize for
+         scenarios where we might do several pops in a row?
 =========================================================================================================
 3.5 Sort Stack: Write a program to sort a stack such that the smallest items are on the top. You can use
 an additional temporary stack, but you may not copy the elements into any other data structure
 (such as an array). The stack supports the following operations: push, pop, peek, and isEmpty.
-Hints: # 75, #32, #43
+Hints: #15, #32, #43
+
+#15 3.5 One way of sorting an array is to iterate through the array and insert each element into
+        a new array in sorted order. Can you do this with a stack?
+#32 3.5 Imagine your secondary stack is sorted. Can you insert elements into it in sorted order?
+        You might need some extra storage. What could you use for extra storage?
+#43 3.5 Keep the secondary stack in sorted order, with the biggest elements on the top. Use the
+        primary stack for additional storage.
 =========================================================================================================
 3.6 Animal Shelter: An animal shelter, which holds only dogs and cats, operates on a strictly"first in,
 first out" basis. People must adopt either the "oldest" (based on arrival time) of all animals at the shelter,
@@ -50,6 +71,14 @@ that type). They cannot select which specific animal they would like. Create the
 maintain this system and implement operations such as enqueue, dequeueAny, dequeueDog,
 and dequeueCat. You may use the built-in Linked List data structure.
 Hints: #22, #56, #63
+
+#22 3.6 We could consider keeping a single linked list for dogs and cats, and then iterating
+        through it to find the first dog (or cat). What is the impact of doing this?
+#56 3.6 Let's suppose we kept separate lists for dogs and cats. How would we find the oldest
+        animal of any type? Be creative!
+#63 3.6 Think about how you'd do it in real life. You have a list of dogs in chronological order and
+        a list of cats in chronological order. What data would you need to find the oldest animal?
+        How would you maintain this data?
 =========================================================================================================
 Additional Questions: Linked Lists (#2.6), Moderate Problems (#16.26), Hard Problems (#17.9).
 Hints start on page 653.
